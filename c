@@ -28,11 +28,20 @@
 三 输入 输出
         1，格式化输入输出      scanf   printf
                 int printf(const char *format , ....)
-                format: "%[修饰符]格式字符"
-                
-                
+                        format: "%[修饰符]格式字符"
+                        变参函数，自己都不知道有几个参数
+                        \n刷新缓冲区
+                int scanf(const char *format , ....)
+                        不能加\n scanf要原样输入
+                        输入输出类型要匹配
+                        不能用间隔符
+                        %s极度容易越界
+                        放在循环中很危险，需要校验scanf的返回值 
+                        scnaf("%*c%c",&ch) *抑制符吃掉一个ch值
         2，字符输入输出        getchar  putchar
-        3，字符串输入输出      gets     puts
+                  int getchar(void)
+                  int putchar(int c)
+        3，字符串输入输出      gets     puts  最好不要用
                 修饰符                    功能
                 m                       输出数据域宽，数据长度<m,左补空格，否则按实际输出
                .n                       对实数，指定小数点后位数（四舍五入），对字符串指定实际输出位数
