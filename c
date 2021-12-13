@@ -67,7 +67,37 @@
  流程控制
         顺序，选择，循环
         关键字
-        选择 if-else     switch-case:
-        循环 while       do-while   for        if go-to
-        辅助循环  continue       break
+        选择           
+                if-else    else 与他最近的if匹配   ，当他多条语句时要加{}语句框
+                switch(exp)
+                {
+                      case  常量表达式：
+                        break;
+                      case  常量表达式：
+                        break;
+                      ......
+                      default:(当所有分支都不成功时走他)
+                }  
+                
+                
+                循环   while(exp) (最少为0次)
+                                           while(exp)  
+                                           {
+                                              loop
+                                           }
+                           
+                      do-while(exp) (最少执行1次)
+
+                                      do
+                                      {
+                                        loop
+                                      }while （exp）
+                      
+                      
+                      for   (最小循环0次)
+                                        for(exp1;exp2;exp3)
+                                                loop;
+                      
+                      if go-to
+        辅助循环       continue       break
                  
